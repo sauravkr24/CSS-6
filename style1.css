@@ -1,0 +1,149 @@
+
+
+@media screen and (min-width: 990px) {
+    body {
+      background: url(./Sahara.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    .boxes {
+      display: grid;
+      
+      grid-template: 6rem auto / repeat(2, auto);
+      grid-template-areas:
+        "header header"
+        "about  cards";
+      gap: 1rem;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+    }
+  
+    .box1 {
+      
+      grid-area: header;
+    }
+  
+    .box-two {
+      grid-area: about;
+      color:violet;
+      padding: 0 4rem;
+    }
+  
+    .box-three {
+      grid-area: cards;
+      padding: 0 4rem;
+    }
+  
+    .navbar {
+      display: flex;
+      margin-top: 2rem;
+    }
+  
+    .logo img {
+      width: 5rem;
+      height: 4rem;
+      margin-left: 3rem;
+      padding-left: 1rem;
+    }
+  
+    .links {
+      display: flex;
+      align-items: center;
+      margin-right: 3rem;
+      position: absolute;
+      right: 0;
+    }
+  
+    .links ul {
+      display: flex;
+      color: white;
+    }
+  
+    ul li {
+      padding-right: 2rem;
+      list-style-type: none;
+    }
+  
+    .links img {
+      width: 3rem;
+      height: 3rem;
+      padding-left: 1rem;
+      padding-right: 3rem;
+    }
+  
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 7rem;
+    }
+    p {
+      margin: 0;
+    }
+  
+    button {
+      background:bisque;
+      border: 10px ridge violet;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+      padding: 1rem 4rem;
+      border-radius: 30px;
+    }
+  
+    .box-three {
+      display: grid;
+      grid-template: repeat(2, auto) / repeat(2, auto);
+      gap: 1.5rem 2rem;
+      position: relative;
+    }
+  
+    .card {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 15px;
+      filter: brightness(80%);
+      transition: transform 250ms;
+    }
+  
+    .card:hover {
+      transform:translateY(-25px);
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .card-one {
+      background-image: url(./pyramid.png);
+      border-radius: 10px;
+    }
+  
+     .card-two {
+      background-image: url(./man.png);
+      border-radius: 10px;
+    }
+     .card-three {
+      background-image: url(./mountain.png);
+      border-radius: 10px;
+    }
+     .card-four {
+      background-image: url(./night.png);
+      border-radius: 10px;
+    }
+  
+  
+    
+  
+    h2 {
+      padding-left: 2rem;
+      margin-bottom: 0;
+    }
+  
+    .text p {
+      padding-left: 2rem;
+    }
+  }
+  
